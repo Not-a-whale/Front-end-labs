@@ -1,0 +1,51 @@
+.container {
+  width: 80vw;
+  height: 80vh;
+  margin: 50px 10vw;
+  background-color: red;
+}
+.container__top {
+  display: flex;
+  height: 90%;
+}
+.container__top .right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.container__top .right .top {
+  flex: 1;
+  background-color: lightblue;
+}
+.container__top .right .bottom {
+  flex: 8;
+  background-color: lightyellow;
+}
+.container__top .left {
+  flex: 1;
+  background-color: aquamarine;
+}
+.container__bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+.container__bottom .right {
+  width: 70%;
+  background-color: khaki;
+}
+.container__bottom .left {
+  width: 30%;
+  background-color: pink;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}/*# sourceMappingURL=style.css.map */
