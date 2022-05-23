@@ -4,6 +4,17 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.header .navbar {
+  transition: 0.5s all;
+}
+.header.header-scroll .navbar {
+  background-color: #6c757d !important;
+}
+
 .navbar {
   padding: 0.5rem 10% !important;
 }
@@ -19,6 +30,31 @@
   width: 30px;
   border-radius: 10px;
   background-color: #f47121;
+}
+.navbar #navbarCollapse {
+  border-radius: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .navbar #navbarCollapse {
+    background-color: #6c757d !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbar .nav-link {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbar .btn {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbar .form-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .nav-item {
@@ -36,8 +72,10 @@
   outline: none !important;
   border: none !important;
 }
-.nav-item:hover::after {
-  width: 30px;
+@media screen and (min-width: 1024px) {
+  .nav-item:hover::after {
+    width: 30px;
+  }
 }
 .nav-item::after {
   content: "";
@@ -56,9 +94,16 @@
   height: 90vh;
   background: url("./assets/images/main_image.jpg");
   background-position: 90% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .page-top {
+    height: 50vh;
+  }
 }
 .page-top__block {
   display: flex;
@@ -76,6 +121,17 @@
   width: -moz-max-content;
   width: max-content;
   font-family: monospace;
+}
+@media screen and (max-width: 1024px) {
+  .page-top__header {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-top__header {
+    font-size: 1.1rem;
+    text-align: center;
+  }
 }
 .page-top__header::after, .page-top__header::before {
   content: "";
@@ -102,11 +158,23 @@
   color: #fff;
   font-weight: lighter;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   opacity: 0;
   transform: translateY(3rem);
   -webkit-animation: fadeInUp 2s ease forwards;
           animation: fadeInUp 2s ease forwards;
+}
+@media screen and (max-width: 1024px) {
+  .page-top__heading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-top__heading {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 @-webkit-keyframes typewriter {
   to {
@@ -150,4 +218,110 @@
   transform: translateY(3rem);
   -webkit-animation: fadeInUp 2s 2s ease forwards;
           animation: fadeInUp 2s 2s ease forwards;
+}
+
+.products {
+  margin-top: 3rem;
+}
+.products__header {
+  color: #f47121;
+}
+.products__heading-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.products__items {
+  width: 90% !important;
+}
+.products .card {
+  height: 95% !important;
+}
+.products .card-img-top {
+  height: 300px;
+}
+.products .card-img-top__box {
+  position: relative;
+}
+.products .card-img-top__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  background-color: #f47121;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.products .card-img-top__badge p {
+  padding: 0;
+  margin: 0;
+}
+.products .card-img-top--2 {
+  width: 90%;
+  margin: 0 5%;
+}
+.products .card-img-top--3 {
+  width: 80%;
+  margin: 0 10%;
+}
+.products .card-img-top--7 {
+  width: 70%;
+  height: 200px;
+  margin: 50px 15%;
+}
+.products .card-img-top--8 {
+  width: 80%;
+  height: 280px;
+  margin: 10px 10%;
+}
+
+.how-Works {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.how-Works .products__heading-block {
+  padding: 0 20px;
+  width: 90%;
+}
+.how-Works .products__heading-block {
+  align-items: flex-start;
+}
+.how-Works__block {
+  width: 90% !important;
+}
+.how-Works__block .card {
+  border: none;
+}
+.how-Works__block .card-body {
+  padding: 0;
+}
+.how-Works__block .card-img-top__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.how-Works__block .card-img-top__badge {
+  background-color: #f47121;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  height: 5rem;
+  background-color: #f47121;
 }/*# sourceMappingURL=style.css.map */

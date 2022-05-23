@@ -11,15 +11,15 @@
 
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="mainHeader">
         <div class="container">
             <div class="row">
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                     <a class="navbar-brand" href="#">Auction</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" id="navbarToggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse ml-5" id="navbarCollapse">
+                    <div class="collapse navbar-collapse ml-lg-5" id="navbarCollapse">
                       <ul class="navbar-nav mr-auto">
                         <li class="nav-item px-3">
                           <a class="nav-link text-white " href="#">Home <span class="sr-only">(current)</span></a>
@@ -65,6 +65,264 @@
                   <button class="page-top__btn">Register</button>
               </div>
           </section>
+          <section class="products">
+            <div class="products__heading-block">
+                <h6 class="products__header">AUCTIONS</h6>
+                <h2 class="products__heading">Current <strong>Auctions</strong></h2>
+            </div>
+              <div class="container-fluid products__items">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-img-top__box">
+                                <img class="card-img-top card-img-top--1" src="./assets/images/goods/shoe_sneakers.jpg" data-holder-rendered="true">
+                                <div class="card-img-top__badge"><p>95$</p></div>
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Some sneakers</h5>
+                            <div class="card-text__block d-flex justify-content-between align-items-center">
+                                <p class="card-text">Shoes</p>
+                                <p class="card-text">4 bids</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Submit a bid</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-img-top__box">
+                                <div class="card-img-top__badge"><p>30$</p></div>
+                                <img class="card-img-top card-img-top--2" src="./assets/images/goods/Reading_Glasses.jpg" alt="Thumbnail [100%x225]" data-holder-rendered="true">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Eye glass eye protector</h5>
+                            <div class="card-text__block d-flex justify-content-between align-items-center">
+                                <p class="card-text">Eye glasses</p>
+                                <p class="card-text">10 bids</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Submit a bid</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-img-top__box">
+                                <div class="card-img-top__badge"><p>199$</p></div>
+                                <img class="card-img-top card-img-top--3" src="./assets/images/goods/black_leather_jacket.jpg" alt="Thumbnail [100%x225]" data-holder-rendered="true">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Black Leather Jacket</h5>
+                                <div class="card-text__block d-flex justify-content-between align-items-center">
+                                    <p class="card-text">Clothing</p>
+                                    <p class="card-text">24 bids</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Submit a bid</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-img-top__box">
+                            <div class="card-img-top__badge"><p>1.999$</p></div>
+                            <img class="card-img-top card-img-top--4" src="./assets/images/goods/macbook_15.jpg" data-holder-rendered="true">    
+                        </div>
+                       <div class="card-body">
+                        <h5 class="card-title">Macbook 15-inch laptop</h5>
+                        <div class="card-text__block d-flex justify-content-between align-items-center">
+                            <p class="card-text">Electronics</p>
+                            <p class="card-text">224 bids</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Submit a bid</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-img-top__box">
+                                <div class="card-img-top__badge"><p>777$</p></div>
+                                <img class="card-img-top card-img-top--5" src="assets/images/goods/ipad_mini.jpg">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">IPad</h5>
+                                <div class="card-text__block d-flex justify-content-between align-items-center">
+                                    <p class="card-text">Electronics</p>
+                                    <p class="card-text">11 bids</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Submit a bid</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-img-top__box">
+                                <div class="card-img-top__badge"><p>78$</p></div>
+                                <img class="card-img-top card-img-top--6" src="./assets/images/goods/sneakers.webp" data-holder-rendered="true">    
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Shoe sneakers</h5>
+                                <div class="card-text__block d-flex justify-content-between align-items-center">
+                                    <p class="card-text">Shoes</p>
+                                    <p class="card-text">4 bids</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Submit a bid</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-img-top__box">
+                            <div class="card-img-top__badge"><p>2.999$</p></div>
+                            <img class="card-img-top card-img-top--7" src="./assets/images/goods/imac.jpg" alt="Thumbnail [100%x225]" data-holder-rendered="true">    
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">Some sneakers</h5>
+                        <div class="card-text__block d-flex justify-content-between align-items-center">
+                            <p class="card-text">Electronics</p>
+                            <p class="card-text">293 bids</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Submit a bid</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-img-top__box">
+                            <div class="card-img-top__badge"><p>450$</p></div>
+                            <img class="card-img-top card-img-top--8" src="./assets/images/goods/iwatch.jpeg" data-holder-rendered="true">    
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">IWatch</h5>
+                        <div class="card-text__block d-flex justify-content-between align-items-center">
+                            <p class="card-text">Electronics</p>
+                            <p class="card-text">123 bids</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Submit a bid</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+          </section>
+          <section class="how-Works">
+            <div class="products__heading-block">
+                <h6 class="products__header">How?</h6>
+                <h2 class="products__heading">How <strong>it works?</strong></h2>
+            </div>
+
+            <div class="container-fluid how-Works__block">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-img-top__box">
+                                <div class="card-img-top__badge">
+                                    <span style="color: white;">
+                                        <i class="fa-solid fa-xl fa-user-large"></i>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-xl fa-chevron-right"></i>
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Register</h5>
+                            <div class="card-text__block d-flex justify-content-between align-items-center">
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate autem sequi neque quis blanditiis laborum, aliquam eaque, eius molestias molestiae delectus natus similique odit harum rem voluptatibus esse cum! At.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-img-top__box">
+                                <div class="card-img-top__badge">
+                                    <span style="color: white;">
+                                        <i class="fa-solid  fa-xl  fa-money-bill-1"></i>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-xl fa-chevron-right"></i>
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Buy or Bid</h5>
+                            <div class="card-text__block d-flex justify-content-between align-items-center">
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate autem sequi neque quis blanditiis laborum, aliquam eaque, eius molestias molestiae delectus natus similique odit harum rem voluptatibus esse cum! At.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-img-top__box">
+                                <div class="card-img-top__badge">
+                                    <span style="color: white;">
+                                        <i class="fa-solid fa-xl fa-martini-glass"></i>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-xl fa-chevron-right"></i>
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Submit a bid</h5>
+                            <div class="card-text__block d-flex justify-content-between align-items-center">
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate autem sequi neque quis blanditiis laborum, aliquam eaque, eius molestias molestiae delectus natus similique odit harum rem voluptatibus esse cum! At.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-img-top__box">
+                                <div class="card-img-top__badge">
+                                    <span style="color: white;">
+                                        <i class="fa-solid fa-xl fa-trophy"></i>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right fa-xl"></i>
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Win!</h5>
+                            <div class="card-text__block d-flex justify-content-between align-items-center">
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate autem sequi neque quis blanditiis laborum, aliquam eaque, eius molestias molestiae delectus natus similique odit harum rem voluptatibus esse cum! At.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <footer>
+
+          </footer>
       </main>
       <script src="./script.js"></script>
 </body>
